@@ -5,14 +5,16 @@ function App() {
  
   const changeBackground = ()=>{
     let body = document.querySelector('body');
-    body.style.background = "linear-gradient(to right, "+randomColor()+","+randomColor();")";
+    body.style.background = `linear-gradient(to right, ${randomColor()}, ${randomColor()})`;
+
     
   }
   const changeBackgroundInput = ()=>{
     let input1 = document.getElementById('input1').value;
     let input2 = document.getElementById('input2').value;
     let body = document.querySelector('body');
-    body.style.background = "linear-gradient(to right, "+input1+","+input2;")";
+    body.style.background =`linear-gradient(to right, ${input1}, ${input2})`;
+
   }
 
   function randomColor(){
